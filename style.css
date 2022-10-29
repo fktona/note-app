@@ -49,7 +49,7 @@ main{
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
-  filter: blur(10px);
+  
 
 }
 :is(.addNote , .addTask){
