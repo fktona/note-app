@@ -19,8 +19,8 @@
     <div class="homePage">
     <div class="ask">Task</div>
         <div class="add">
-            <div class="addNote">add note</div>
-            <div class="addTask"> add task</div>
+            <div class="addNote">add task</div>
+            <div class="addTask"> add note</div>
         </div>
     
     
@@ -29,19 +29,23 @@
   <form action="#">
     <fieldset class="taskarea">
         <legend>TASK</legend>
+        <span class="cancel">back</span>
     <input type="text" name="" placeholder="Your Task" id="inputTask">
-    <button type="submit">ADD</button>
+    <button class="back" type="submit">ADD</button class="back">
     </fieldset>
     <fieldset>
         <legend>NOTE</legend>
+        <span class="cancel">back</span>
     <input type="text" name="" placeholder="TITTLE" class="noteTitle">
-    <textarea placeholder="note" spellcheck="false"></textarea>
-    <button type="submit">ADD</button>
+    <textarea placeholder="note" class="txt" spellcheck="false"></textarea>
+    <button class="back" type="submit">ADD</button class="back">
     </fieldset>
   </form>  
 </div>
 <section class="notePage">
+    
     <nav>
+        <p>note</p>
     <ul class="ic">
         <li>home</li>
         <li>setting</li>
@@ -58,50 +62,18 @@
 </header>
 </nav>
 <div class="listNote">
-    <div>
-    <h3>industry</h3>
-    <span class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-         Quos quidem natus sed nihil voluptate, quaerat minus nesciunt magnam sequi commodi!</span>
-         <span class="date">oct 2nd</span>
-        </div>
-        <div>
-            <h3>industry</h3>
-            <span class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                 Quos quidem natus sed nihil voluptate, quaerat minus nesciunt magnam sequi commodi!</span>
-                 <span class="date">oct 2nd</span>
-                </div>
-                <div>
-                    <h3>industry</h3>
-                    <span class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                         Quos quidem natus sed nihil voluptate, quaerat minus nesciunt magnam sequi commodi!</span>
-                         <span class="date">oct 2nd</span>
-                </div> 
-                <div>
-                    <h3>industry</h3>
-                    <span class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                         Quos quidem natus sed nihil voluptate, quaerat minus nesciunt magnam sequi commodi!</span>
-                         <span class="date">oct 2nd</span>
-                        </div>
-       
-                        <div>
-                            <h3>industry</h3>
-                            <span class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                 Quos quidem natus sed nihil voluptate, quaerat minus nesciunt magnam sequi commodi!</span>
-                                 <span class="date">oct 2nd</span>
-                                </div>
-                                <div>
-                                    <h3>industry</h3>
-                                    <span class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Quos quidem natus sed nihil voluptate, quaerat minus nesciunt magnam sequi commodi!</span>
-                                         <span class="date">oct 2nd</span>
-                                        </div>
-                               
+    <div class="none">
+    <h3><!--TITLE--></h3>
+    <span class="details"><!--NOTE DETAILS--></span>
+         <span class="date"><!--DATE--></span>
+
                        
 </div>
 <aside>+</aside>
 </section> 
 <section class="taskPage">
 <nav>
+    <button class="back">></button class="back">
     <h2>my task</h2>
     <input type="search" name="" placeholder="task name" id="searchTask">
     <input type="image" src="#" placeholder="" alt="#">
@@ -110,24 +82,6 @@
     </div>
 </nav>
 <div class="dailyTasks">
-    <div class="taskDate">today</div>
-    <div class="taskInput">
-    <label for="done"></label>
-    <input type="radio" id="done" name="">
-    <div class="function">
-    <!--<button class="delete">0</button>
-    <button class="edit">0</button>-->
-</div>
-</div>
-<div class="taskInput">
-    <label for="done">
-    <input type="radio" id="done" name="">
-    <div class="function"></label>
-   <!-- <button class="delete">0</button>
-    <button class="edit">0</button>-->
-</div>
-</div>
-</div>
 <aside>+</aside>
 </section>
 </main>

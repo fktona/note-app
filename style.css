@@ -8,51 +8,45 @@
   border: none;
 }
 
-html{
-    font-size: 17px;
+html {
+  font-size: 17px;
 }
 
-body{
+body {
   background-color: black;
-
 }
-main{
+main {
   display: flex;
   flex-direction: column;
-  
-  
 }
-.container{
+.container {
   position: relative;
   scroll-snap-type: y mandatory;
 }
-.homePage{
+.homePage {
   position: relative;
-  display:  flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 99vh;
+  height: 95vh;
   color: white;
   scroll-snap-align: start;
- 
 }
 
-.none{
+.none {
   display: none;
 }
-.add{
+.add {
   display: flex;
   position: relative;
   width: 100%;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
-  
-
 }
-:is(.addNote , .addTask){
+:is(.addNote, .addTask) {
   position: relative;
   width: 35%;
   max-width: 100px;
@@ -66,58 +60,56 @@ main{
   border-style: dashed;
 }
 
-:is(.note , .ask){
+:is(.note, .ask) {
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.3rem ;
-
+  padding: 1.3rem;
 }
 
-.note{
-  box-shadow: 5px -5px 7px  rgba(255, 254, 254, 0.129);
+.note {
+  box-shadow: 5px -5px 7px rgba(255, 254, 254, 0.129);
   border-top-right-radius: 20%;
   border-top-left-radius: 20%;
-
 }
-.ask{
-  box-shadow: 5px 5px 7px  rgba(255, 254, 254, 0.129);
+.ask {
+  box-shadow: 5px 5px 7px rgba(255, 254, 254, 0.129);
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 20%;
 }
 
-form{
+form {
   position: absolute;
   width: 100%;
-  transform: translate(50%  50%);
+  transform: translate(50% 50%);
   top: 40%;
   z-index: 3;
- 
-
 }
-fieldset{
-display: flex;
-flex-direction: column;
-width: max-content;
-gap: 1rem;
-margin: auto;
-justify-content: center;
-align-items: center;
-color: rgb(253, 251, 251);
-padding: 1.5rem;
-background-color: rgba(255, 255, 255, 0.119); 
-box-shadow: 5px 5px 12px rgba(255, 255, 255, 0.135) , -2px -2px 12px rgba(255, 255, 255, 0.185);
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 1rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: rgb(253, 251, 251);
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.119);
+  box-shadow: 5px 5px 12px rgba(255, 255, 255, 0.135),
+    -2px -2px 12px rgba(255, 255, 255, 0.185);
 }
-#inputTask , .noteTitle{
+#inputTask,
+.noteTitle {
   color: white;
-padding: 0.4rem;
-font-size: 1rem;
-background: none;
-border-bottom: 2px solid white;
+  padding: 0.4rem;
+  font-size: 1rem;
+  background: none;
+  border-bottom: 1px solid white;
 }
-fieldset button{
+fieldset button {
   position: relative;
   padding: 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -125,7 +117,7 @@ fieldset button{
   font-weight: 300;
   bottom: -8px;
 }
-textarea{
+textarea {
   padding: 0.5rem;
   text-align: center;
   width: 100%;
@@ -136,50 +128,54 @@ textarea{
   border: 1px solid silver;
 }
 
-textarea:focus{
+textarea:focus {
   background: white;
   color: black;
+  outline: 1px solid white;
 }
 
-.notePage{
+.notePage {
   position: relative;
   color: white;
   font-size: 1rem;
   min-height: 90vh;
   scroll-snap-align: start;
-
 }
-.notePage  nav{
+.notePage nav {
   position: relative;
   height: 29vh;
-  background: linear-gradient( 60deg, rgb(107, 233, 107) ,  rgb(31, 235, 31)); 
+  background: linear-gradient(60deg, rgb(107, 233, 107), rgb(31, 235, 31));
   padding: 1rem;
-
 }
-.notePage nav > h4{
+.notePage nav > h4 {
   position: relative;
-width: max-content;
-font-size: 1.3rem;
-margin: auto;
-padding: 0.4rem;
-border: 2px solid   rgb(31, 235, 31);
-background-color: white;
-color:   rgb(31, 235, 31);
-border-radius: 18px;
+  width: max-content;
+  font-size: 1.3rem;
+  margin: auto;
+  padding: 0.4rem;
+  border: 2px solid rgb(31, 235, 31);
+  background-color: white;
+  color: rgb(31, 235, 31);
+  border-radius: 18px;
 }
 
-.ic{
+.ic {
   position: absolute;
   top: 0;
   right: 0;
   display: none;
 }
 
-.notePage header{
+.notePage header {
   width: 90%;
   height: 70%;
-background:linear-gradient( 45deg , rgba(255, 255, 255, 0.158) ,  rgba(253, 253, 253, 0.128));
-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.115) , -1px -1px 5px rgba(0, 0, 0, 0.115);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.158),
+    rgba(253, 253, 253, 0.128)
+  );
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.115),
+    -1px -1px 5px rgba(0, 0, 0, 0.115);
   position: relative;
   margin: auto;
   text-align: center;
@@ -189,14 +185,23 @@ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.115) , -1px -1px 5px rgba(0, 0, 0, 0.115
   font-size: 2.5rem;
   flex-direction: column;
   border-radius: 20px;
-  margin-top: 10PX;
+  margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-li{
+.notePage nav p {
+  position: absolute;
+  color: rgb(252, 252, 252);
+  left: 0;
+  place-self: center;
+  font-size: 2.5rem;
+  top: 30%;
+  writing-mode: vertical-rl;
+}
+li {
   list-style: none;
 }
-.listNote{
+.listNote {
   position: relative;
   border-radius: 30px 30px 0 0;
   top: -20px;
@@ -204,93 +209,106 @@ li{
   padding: 1rem;
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 45%));
   gap: 1.3rem;
 }
 
-.listNote div{
+.noteDetails {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0.3rem ;
-background:linear-gradient( 45deg , rgba(255, 255, 255, 0.118) ,  rgba(253, 253, 253, 0.118));
-box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.125) , -2px -2px 5px rgba(255, 255, 255, 0.125);
+  padding: 0.3rem;
+  min-height: 28vh;
+  max-height: 28vh;
+  word-wrap: break-word;
+  overflow: hidden;
+  transition: 0.5s;
+ background: black
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.125),
+    -2px -2px 5px rgba(255, 255, 255, 0.125);
 }
 
-.listNote div h3{
+.displayNote{
+  position: absolute;
+  width: 90%;
+  min-height: 65vh;
+  max-height: none;
+  place-self: center;
+  align-self: center;
+}
+.listNote div h3 {
   position: relative;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   left: 10px;
   text-transform: capitalize;
 }
-.date{
+.date {
   position: relative;
   place-self: end;
   margin-right: 0.5rem;
-  
 }
 
-.notePage aside , .taskPage aside {
-  position: absolute;
-  bottom: 5px;
+.notePage aside,
+.taskPage aside {
+  position: fixed;
+  bottom: 15px;
   right: 10px;
   height: 80px;
   aspect-ratio: 1/1;
   font-size: 2.3rem;
   font-weight: 800;
   border-radius: 50%;
-  background-color:   rgb(31, 235, 31) ;
+  background-color: rgb(31, 235, 31);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  z-index: 555;
 }
-.taskPage{
+.taskPage {
   position: relative;
   min-height: 90vh;
   order: -1;
   scroll-snap-align: start;
-  
 }
-.taskPage nav{
+.taskPage nav {
   padding: 1rem;
   color: white;
   display: flex;
-flex-direction: column;
-gap: 1rem;
-justify-content: center;
-align-items: center;
-font-size: 1.3rem;
-text-transform: capitalize;
-margin-bottom: 1rem;
-height: 20vh;
-  background: linear-gradient( 60deg, rgb(107, 233, 107) ,  rgb(31, 235, 31)); 
- 
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  height: 20vh;
+  background: linear-gradient(60deg, rgb(107, 233, 107), rgb(31, 235, 31));
 }
 
-#searchTask{
+#searchTask {
   width: 70%;
   padding: 0.7rem;
   background: rgba(0, 0, 0, 0.129);
   border-radius: 20px;
   color: white;
-
 }
 
-.menu{
+.menu {
   position: absolute;
   top: 0;
 }
 .dailyTasks {
   color: white;
- text-transform: capitalize;
- padding: 1rem;
- 
+  text-transform: capitalize;
+  padding: 1rem;
+  display: grid;
 }
 
-.taskInput{
+.taskInput {
   background: rgba(0, 0, 0);
   padding: 0.4rem;
   width: 100%;
@@ -300,10 +318,11 @@ height: 20vh;
   justify-content: start;
   align-items: center;
   gap: 18px;
-  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.115) , -2px -2px 8px rgba(40, 230, 56, 0.115);
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.115),
+    -2px -2px 8px rgba(40, 230, 56, 0.115);
 }
 
-.function{
+.function {
   position: relative;
   display: flex;
   justify-content: center;
@@ -311,9 +330,52 @@ height: 20vh;
   margin-top: 0.5rem;
 }
 
-.function button{
+.function button {
   position: relative;
   color: white;
   right: 0;
   background: transparent;
+}
+
+.inn {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.43);
+  align-self: center;
+  place-self: center;
+}
+
+.validation {
+  outline: 1px solid red;
+  animation: validate 1s;
+}
+.validationb {
+  border-top: 1px solid red;
+  animation: validate 1s;
+}
+
+@keyframes validate {
+  0% {
+    transform: translatex(5px);
+  }
+
+  25% {
+    transform: translatex(-5px);
+  }
+  50% {
+    transform: translatex(5px);
+  }
+
+  75% {
+    transform: translatex(-5px);
+  }
+  100% {
+    transform: translatex(0px);
+  
+  }
+}
+
+input[type = "radio"]:checked{
+  accent-color: rgb(10, 165, 30);
+  border-radius: 50%;
+  
 }
